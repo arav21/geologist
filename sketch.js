@@ -13,7 +13,8 @@ function setup(){
 
     plane = new Plane(600,height,1200,20)
     hammer = new Hammer(10,100);
-
+    
+    rubber = new Rubber(700,height,10,10)
   
 
 
@@ -22,12 +23,10 @@ function setup(){
 function draw(){
     background("lightBlue");
     Engine.update(engine);
-    hammer.y = World.mouseY;
-    hammer.x = World.mouseX;
 
     plane.display();
     hammer.display();
-    Rubber.display();
+    rubber.display();
 
     
  
